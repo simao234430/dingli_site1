@@ -150,7 +150,7 @@ STATICFILES_DIRS = (
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media1001')
 MEDIA_URL = '/media/'
 
-CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'CKEDITOR')
+CKEDITOR_UPLOAD_PATH = os.path.join(MEDIA_ROOT, 'CKEDITOR')
 
 CKEDITOR_JQUERY_URL = '//cdn.bootcss.com/jquery/1.11.3/jquery.min.js'
 CKEDITOR_IMAGE_BACKEND = 'pillow'

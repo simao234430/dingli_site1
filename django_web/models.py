@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from ckeditor.fields import RichTextField
+
+from ckeditor_uploader.fields import RichTextUploadingField
+
 from django.db import models
 from datetime import datetime
 import sys;
@@ -59,7 +61,7 @@ class TeacherCategoryAdmin(admin.ModelAdmin):
 
 class Article(models.Model):
     id = models.IntegerField(primary_key=True)
-    content = RichTextField('正文')
+    content = RichTextUploadingField('正文')
     title = models.CharField(u'标题',max_length=64,default="")
     title_pic = models.ImageField(u'头部图片', upload_to='uploadImages',default="")
     publish_date = models.DateTimeField(blank=True, auto_now_add = True, )#default=datetime.now(),

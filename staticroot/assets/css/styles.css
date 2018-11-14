@@ -76,7 +76,7 @@ ul{
 	padding: 0;
 }
 .ptb-15{padding:15px 0px}
-.ptb-30{padding:30px 0px}
+.ptb-30{padding:30px 20px}
 .ptb-140{padding:140px 0px;}
 .ptb-70{padding:140px 0px 110px;}
 
@@ -2571,7 +2571,7 @@ ul{
 .quote-wrap a:hover{
     background: #0552b1;
 }
-
+.ptb-10-10{padding: 10px 10px;}
 .ptb-30{padding: 30px 0px;}
 /*-----------------quote-area start----------------*/
 .ptb-100{padding: 100px 0px;}

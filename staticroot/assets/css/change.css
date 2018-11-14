@@ -164,7 +164,7 @@ img, .img {
 }
 
 #scrollUp {
-  background: #fc8023 none repeat scroll 0 0;
+  background: #99ccff none repeat scroll 0 0;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   bottom: 10px;
@@ -338,3 +338,328 @@ img, .img {
     background: #f6f6f6 none repeat scroll 0 0;
     padding: 30px 0;
 }
+
+section.breadcrumbs-area::before {
+    background: #000000 none repeat scroll 0 0;
+    opacity: 0.6;
+}
+
+  .breadcrumbs-area {
+        padding: 80px 0;
+    }
+
+    .breadcrumbs h2.page-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .breadcrumbs-area-default .breadcrumbs ul li,
+    .breadcrumbs ul li {
+        font-size: 13px;
+    }
+
+    breadcrumbs-area {
+    padding: 170px 0;
+    background-color: #ededed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.breadcrumbs-area-default .breadcrumbs .page-title,
+.breadcrumbs-area-default .breadcrumbs ul,
+.breadcrumbs-area-default .breadcrumbs ul li,
+.breadcrumbs-area-default .breadcrumbs ul li a {
+    color: #ffffff;
+}
+
+    .breadcrumbs-area-default .breadcrumbs ul li a:hover {
+        color: #5950F7;
+    }
+
+    .breadcrumbs-area-default .breadcrumbs ul li,
+    .breadcrumbs ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+        .breadcrumbs-area-default .breadcrumbs ul li:last-child,
+        .breadcrumbs ul li:last-child {
+            padding-right: 0px;
+        }
+
+        .breadcrumbs-area-default .breadcrumbs ul li:first-child,
+        .breadcrumbs ul li:first-child {
+            padding-left: 0px;
+        }
+
+.breadcrumbs-area,
+.breadcrumbs-area.breadcrumbs-bg,
+.post-breadcrumb-banner-area {
+    /*background-image: url(../../../../wp-content/themes/unitech/images/1.jpg) !important;*/
+}
+section.breadcrumbs-area::before {
+    background: #000000 none repeat scroll 0 0;
+    opacity: 0.6;
+}
+
+.breadcrumbs-area::before, .breadcrumbs-area.bredcrumb-blog::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.upcoming__details p a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+    .upcoming__details p a:hover {
+        opacity: 0.7;
+    }
+
+.upcoming__details {
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+
+.event__time span {
+    color: #fff;
+    display: block;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .event__time span:first-child {
+        font-size: 44px;
+        margin-bottom: 5px;
+        margin-top: -5px;
+    }
+
+.upcoming__event__time .event__location {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.event__time {
+    margin-right: 10px;
+}
+
+.event__location {
+    padding-left: 15px;
+}
+
+.event__separator {
+    position: relative;
+}
+
+    .event__separator::before {
+        background: #fff none repeat scroll 0 0;
+        content: "";
+        height: 44px;
+        margin-top: 4px;
+        position: absolute;
+        width: 1px;
+    }
+
+.event__location li {
+    font-size: 14px;
+    font-weight: 500;
+    list-style: outside none none;
+    text-align: left;
+}
+
+    .event__location li i {
+        margin-right: 10px;
+    }
+
+.upcoming__details p a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+    .upcoming__details p a:hover {
+        opacity: 0.7;
+    }
+
+.upcoming__details {
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+.event__btn {
+    float: right;
+}
+
+    .event__btn a {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        display: inline-block;
+        overflow: hidden;
+        padding: 10px 25px;
+        position: relative;
+        text-transform: uppercase;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+    }
+
+        .event__btn a:hover {
+            background: #5950F7;
+            border-color: #5950F7;
+            color: #ffffff;
+        }
+
+
+.upcoming {
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.upcoming__inner {
+    position: relative;
+}
+
+.upcoming__thumb a img {
+    width: 100%;
+}
+
+.upcoming__hover__info {
+    bottom: 0;
+    height: auto;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+    .upcoming__hover__info:before {
+        background: #2D3E50 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .upcoming__hover__action {
+    padding: 20px;
+}
+
+.upcoming__event__time {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+}
+
+.event__time span {
+    color: #fff;
+    display: block;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .event__time span:first-child {
+        font-size: 44px;
+        margin-bottom: 5px;
+        margin-top: -5px;
+    }
+
+.upcoming__event__time .event__location {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.event__time {
+    margin-right: 10px;
+}
+
+.event__location {
+    padding-left: 15px;
+}
+
+.event__separator {
+    position: relative;
+}
+
+    .event__separator::before {
+        background: #fff none repeat scroll 0 0;
+        content: "";
+        height: 44px;
+        margin-top: 4px;
+        position: absolute;
+        width: 1px;
+    }
+
+.event__location li {
+    font-size: 14px;
+    font-weight: 500;
+    list-style: outside none none;
+    text-align: left;
+}
+
+    .event__location li i {
+        margin-right: 10px;
+    }
+
+.upcoming__details p a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+    .upcoming__details p a:hover {
+        opacity: 0.7;
+    }
+
+.upcoming__details {
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+.event__btn {
+    float: right;
+}
+
+    .event__btn a {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        display: inline-block;
+        overflow: hidden;
+        padding: 10px 25px;
+        position: relative;
+        text-transform: uppercase;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+    }
+
+        .event__btn a:hover {
+            background: #5950F7;
+            border-color: #5950F7;
+            color: #ffffff;
+        }
