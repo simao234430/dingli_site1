@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block banner %}
+
+{% endblock %}
+{% block content %}
+<div class="kc-elm kc-css-400771 kc_row kc_row_inner ptb-30">
+  <div class="kc-elm kc-css-638361 kc_col-sm-12 kc_column_inner kc_col-sm-12">
+    <div class="kc_wrapper kc-col-inner-container">
+      <div id="UpdatePanel1">
+
+        <div class="row">
+          <div class="kc-elm kc-css-626515 ">
+            <div class="portfolio-section">
+              <div class="row">
+
+              </div>
+              <div class="portfolio-grid port-grid-199562 yes-padding-wrap">
+                <div class="unitech-events row">
+{% for i in list %}
+                  <!--列表开始-->
+                  <div class="col-md-6 col-xs-12">
+                    <div class="upcoming">
+                      <div class="upcoming__inner">
+                        <div class="upcoming__thumb">
+                          <a href="events_details.aspx?id=18092715100559010000012">
+                                                                                                                <img src="{{MEDIA_URL}}{{i.title_pic}}" id="repeater_teacher_faceimage_0" width="750" height="600" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px">
+                                                                                                            </a>
+                        </div>
+                        <div class="upcoming__hover__info">
+                          <div class="upcoming__hover__action">
+                            <div class="upcoming__details hidden-xs">
+                              <p>
+                                <a href="events_details.aspx?id=18092715100559010000012">
+                                                                                                                            “逐梦前行、成就最美青春”川科鼎利学院2018级开学典礼圆满落幕
+                                                                                                                        </a>
+                              </p>
+                            </div>
+                            <div class="event-time-button clearfix">
+                              <div class="upcoming__event__time">
+                                <div class="event__time">
+                                  <span>19</span>
+                                  <span>9</span>
+                                </div>
+                                <span class="event__separator"></span>
+                                <ul class="event__location">
+                                  <li><i class="fa fa-clock-o"></i>16：00PM-18：00PM</li>
+                                  <li><i class="fa fa-map-marker"></i>四川科技职业学院鼎利（互联网+）学院</li>
+                                </ul>
+                              </div>
+                              <div class="event__btn">
+                                <a class="htc__btn btn--transparent" href="/article/{{i.id}}">查看详细</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+{% endfor %}
+                  <!--列表开始end-->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% block banner %}
+   {% load staticfiles %}
+
+  <div class="breadcumb-area black-opacity bg-img-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="breadcumb-wrap">
+            <div class="breadcrumbs breadcrumbs-title-center">
+                                        <!---breadcrumbs title start-->
+                                        <h2 class="page-title">
+                                            <span id="lbtoptitle">“逐梦前行、成就最美青春”川科鼎利学院2018级开学典礼圆满落幕</span>
+                                        </h2>
+                                        <!---breadcrumbs title end -->
+                                        <!--<div class="page-title-bar">-->
+                                            <!--<ul xmlns:v="">-->
+                                                <!--<li><a rel="v:url" property="v:title" href="index.aspx">主页</a></li>-->
+                                                <!--<li>- </li>-->
+                                                <!--<li><a rel="v:url" property="v:title" href="events.aspx">热点事件</a></li>-->
+                                            <!--</ul>-->
+                                        <!--</div>-->
+                                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}
+{% block content %}
+<div id="content" class="site-content">
+                    <!-- breadcrumbs start -->
+                    <!--<section class="breadcrumbs-area breadcrumbs-bg" style="background-image: url({% static 'assets/images/news.jpg' %}); background-color: ; background-repeat: ; background-size: ; background-attachment: ; background-position: ;background-size: 100%;">-->
+                        <!--<div class="container">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-12">-->
+                                    <!--<div class="breadcrumbs breadcrumbs-title-center">-->
+                                        <!--&lt;!&ndash;-breadcrumbs title start&ndash;&gt;-->
+                                        <!--<h2 class="page-title">-->
+                                            <!--<span id="lbtoptitle">{{article.title}}</span>-->
+                                        <!--</h2>-->
+                                        <!--&lt;!&ndash;-breadcrumbs title end &ndash;&gt;-->
+                                        <!--<div class="page-title-bar">-->
+                                            <!--<ul xmlns:v="">-->
+                                                <!--<li><a rel="v:url" property="v:title" href="index.aspx">主页</a></li>-->
+                                                <!--<li>- </li>-->
+                                                <!--<li><a rel="v:url" property="v:title" href="events.aspx">热点事件</a></li>-->
+                                            <!--</ul>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</section>-->
+                    <!-- breadcrumbs end -->
+                    <div class="blog-story-area pt-80">
+                        <div class="container">
+                            <div class="row">
+                                <!-- single blog right sidebar start -->
+                                <div class="col-md-8">
+                                    <div class="blog-wrapper">
+                                        <!-- Start Title  -->
+                                        <!-- End Title  -->
+                                        <!-- Start Thumbnail  -->
+                                        <div class="blog-slider">
+                                            <div class="blog-gallery-img">
+                                                <img src="{{MEDIA_URL}}{{article.title_pic}}" id="img_faceimage" width="750" height="600" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 750px) 100vw, 750px">
+                                            </div>
+                                        </div>
+                                        <!-- End Thumbnail  -->
+                                        <!--<div class="blog-meta">-->
+                                            <!--<h3 class="sidebar-title">-->
+                                                <!--<span id="lb_title">“逐梦前行、成就最美青春”川科鼎利学院2018级开学典礼圆满落幕</span>-->
+                                            <!--</h3>-->
+                                            <!--&lt;!&ndash;<br>&ndash;&gt;-->
+                                            <!--<span class="user-name">供搞 :-->
+                                            <!--<span id="lb_author">李静雅</span></span>-->
+                                            <!--<span class="date">发表日期 :-->
+                                            <!--<span id="lb_pubdate">2018/9/27 15:10:05</span></span>-->
+                                            <!--<span></span>-->
+                                        <!--</div>-->
+                                        <!-- Start info  -->
+                                        <div class="blog-info">
+                                          <p>{% autoescape off %}{{article.content}}{% endautoescape %}</p>
+                                            <!--<div class="user-info">-->
+                                                <!--&lt;!&ndash;分享&ndash;&gt;-->
+
+                                            <!--</div>-->
+                                            <!--<div class="cats-tags-wrap">-->
+                                            <!--</div>-->
+
+                                        </div>
+
+                                        <div>
+                                                                                        <br>
+                                                                                        <br>
+
+                                            <p>活动地点：<span id="" style="font-weight:bold;">四川科技</span></p>
+
+                                            <span class="user-name">供搞 :{{article.publish_person}}</span>
+                                            <span class="date">发表日期 : {{article.publish_date|date:"Y-m-d H:i:s"}}</span>
+                                            <span class="ew">摄影 : {{article.photoby}}</span>
+                                        </div>
+                                        <!-- End info  -->
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <aside id="secondary" class="widget-area">
+                                        <!--最近的新闻-->
+                                        <div id="unitech_recent_post-4" class="sidebar-widget widget_unitech_recent_post">
+
+<h3 class="sidebar-title">最近的热点</h3>
+
+        <ul class="sidebar-post">
+
+        <li>
+            <div class="post-img">
+                <a href="events_details.aspx?id=18092715100559010000012">
+                    <img src="ClientUploadFiles/event/18092715075714610000011.jpg" id="EventCurrent_repeater_zj_faceimage_0" width="120" height="100" class="attachment-unitech_recent_post_thumb_size size-unitech_recent_post_thumb_size wp-post-image" alt=""></a>
+            </div>
+            <div class="post-text">
+                <h4><a href="events_details.aspx?id=18092715100559010000012">
+                    “逐梦前行、成就最美青春”川科鼎利学院2018级开学典礼圆满落幕
+                </a></h4>
+                <span>2018/9/27 15:10:05</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="post-img">
+                <a href="events_details.aspx?id=18010410350869810000022">
+                    <img src="ClientUploadFiles/event/18022811212172310000007.jpg" id="EventCurrent_repeater_zj_faceimage_1" width="120" height="100" class="attachment-unitech_recent_post_thumb_size size-unitech_recent_post_thumb_size wp-post-image" alt=""></a>
+            </div>
+            <div class="post-text">
+                <h4><a href="events_details.aspx?id=18010410350869810000022">
+                    圆梦鼎利，双周实训
+                </a></h4>
+                <span>2018/1/4 10:35:08</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="post-img">
+                <a href="events_details.aspx?id=18010410322234810000018">
+                    <img src="ClientUploadFiles/event/18010410310772610000017.png" id="EventCurrent_repeater_zj_faceimage_2" width="120" height="100" class="attachment-unitech_recent_post_thumb_size size-unitech_recent_post_thumb_size wp-post-image" alt=""></a>
+            </div>
+            <div class="post-text">
+                <h4><a href="events_details.aspx?id=18010410322234810000018">
+                    玩转网页设计，创意展现才华
+                </a></h4>
+                <span>2018/1/4 10:32:22</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="post-img">
+                <a href="events_details.aspx?id=17120717262602110000006">
+                    <img src="ClientUploadFiles/event/17120717251975410000005.jpg" id="EventCurrent_repeater_zj_faceimage_3" width="120" height="100" class="attachment-unitech_recent_post_thumb_size size-unitech_recent_post_thumb_size wp-post-image" alt=""></a>
+            </div>
+            <div class="post-text">
+                <h4><a href="events_details.aspx?id=17120717262602110000006">
+                    互联网+学院网页设计大赛
+                </a></h4>
+                <span>2017/12/7 17:26:26</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="post-img">
+                <a href="events_details.aspx?id=17120717145513210000003">
+                    <img src="ClientUploadFiles/event/17120717142354010000002.png" id="EventCurrent_repeater_zj_faceimage_4" width="120" height="100" class="attachment-unitech_recent_post_thumb_size size-unitech_recent_post_thumb_size wp-post-image" alt=""></a>
+            </div>
+            <div class="post-text">
+                <h4><a href="events_details.aspx?id=17120717145513210000003">
+                    互联网+学院启动特色晚自习
+                </a></h4>
+                <span>2017/12/7 17:14:55</span>
+            </div>
+        </li>
+
+        </ul>
+
+
+                                        </div>
+                                    </aside>
+                                    <!-- #secondary -->
+                                </div>
+                                <!--single blog right sidebar end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

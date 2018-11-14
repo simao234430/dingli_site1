@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block banner %}
+
+{% endblock %}
+{% block content %}
+<div class="blog-story-area pt-80">
+  <div class="container">
+    <div id="UpdatePanel1">
+
+      <div class="row">
+
+        <!--标题-->
+        <div class="text-left">
+          <div class="section-title">
+            <!--<span class="section-serial">01</span>-->
+            <div class="title-text">
+              <h2>{{category}}</h2>
+              <p>PROFESSIONAL TEACHERS</p>
+            </div>
+          </div>
+        </div>
+        <!--标题end-->
+
+        <div class="unitech-teachers">
+          <!--老师开始-->
+
+{% for i in list %}
+
+          <div class="col-md-4 col-sm-6">
+            <article id="post-337" class="clearfix post-337 post type-post status-publish format-standard has-post-thumbnail hentry category-education tag-business tag-study tag-teaching">
+              <div class="edu-news-single clearfix">
+                <!--作者-->
+                <div id="unitech_author_about_widget-2" class="sidebar-widget widget_unitech_author_about_widget">
+                  <div class="author--info--wrap">
+                    <a href="teacherdetails.aspx?id=17122017583650710000002">
+                                                                            <img src="{{MEDIA_URL}}{{i.photo}}" id="repeater_teacher_imgHeadImage_2" alt="Author Image">
+                                                                        </a>
+                    <div class="self-info white-bg text-center">
+                      <h3><a href="teacherdetail/{{i.id">
+                                                                                {{i.name}}
+                                                                            </a></h3>
+                      <p>{{i.extratitle}} </p>
+                      <div class="blog-social">
+                        <h4>{{i.title}}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+{% endfor %}
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- #primary -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% block banner %}
+
+{% endblock %}
+{% block content %}
+  <section class="htc__profile__area bg__white page-area teacher-details-area">
+    <div class="container">
+      <div class="row">
+        <!-- Start Profile LeftSide -->
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+          <div class="teacher">
+            <div class="teacher__thumb">
+              <a href="#">
+
+                                              <img src="{{MEDIA_URL}}{{teacher.photo}}" id="img_headimage" width="600" height="650" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 600px) 100vw, 600px">
+
+                                          </a>
+              <div class="teacher__hover__info">
+                <ul class="social__icon">
+                  <li>
+                    <span id="lb_name_zc" style="color:White;">{{teacher.name}} {{teacher.title}}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="teacher__details">
+              <h2>
+                                              <span id="lb_tname">{{ teacher.name }} {{teacher.title}}</span></h2>
+              <h6>
+                                              <span id="lb_zc_dx"> {{teacher.grade}} {{teacher.school_name}}</span></h6>
+              <h6>
+                                              <span id="lb_jj">{{teacher.moto}}</span></h6>
+              <ul class="teacher__address">
+                <li>
+                  <i class="fa fa-phone"></i> 电话：
+                  <span id="lb_tel">{{teacher.phone}}</span>
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i> Email：
+                  <span id="lb_email">{{teacher.email}}</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile LeftSide -->
+        <!-- Start Profile RightSide -->
+        <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 xs-mt-40">
+          <div class="htc__profile__right">
+            <!-- Start Courses Area -->
+            <div class="all__courses__area">
+              <h2 class="title__style--2">老师信息</h2>
+              <div class="profile__courses__inner">
+                <ul class="profile__courses__list">
+                  <li>
+                    <i class="fa fa-graduation-cap"></i> 职称名称：
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i> 工作经历：
+                  </li>
+                  <li>
+                    <i class="fa fa-heart"></i> 兴趣爱好：
+                  </li>
+                  <li>
+                    <i class="fa fa-compass"></i> 课程教学：
+                  </li>
+                  <li>
+                    <i class="fa fa-bookmark"></i> 研究方向：
+                  </li>
+
+                </ul>
+                <ul class="profile__courses__right">
+                  <li>
+                    <span id="lb_ProfessionalTitle">{{teacher.title}}</span></li>
+                  <li>
+                    <span id="lb_Experience">{{teacher.work_experice}}</span></li>
+                  <li>
+                    <span id="lb_Hobbies">{{teacher.hobby}}</span></li>
+                  <li>
+                    <span id="lb_Courses">{{teacher.course_teacher}}</span></li>
+                  <li>
+                    <span id="lb_Projects">{{teacher.study_direction}}</span></li>
+
+                </ul>
+              </div>
+              <div class="all__crs__details">
+
+                <i class="fa fa-star"></i> 杰出成果：
+
+                <p>
+                  {{teacher.achievement}}
+                </p>
+              </div>
+              <div class="all__crs__details">
+                <i class="fa fa-star"></i> 个人简介：
+                <p>
+                  {{teacher.introduction}}
+                </p>
+                <p class="MsoNormal" style="line-height: 30pt; mso-line-height-rule: exactly;"><span style="font-family: 宋体; font-size: 14pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-font-kerning: 1.0000pt;"></span><span style="font-family: 宋体; font-size: 14pt; mso-spacerun: &quot;yes&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-font-kerning: 1.0000pt;"><!--?xml:namespace prefix = o /--><o:p></o:p></span></p>
+                <p></p>
+              </div>
+            </div>
+            <!-- End Courses Area -->
+            <div class="row">
+              <div class="teacher__skill clearfix">
+                <div class="col-md-6 col-lg-6">
+                  <div class="htc__skill__container progress__bar--2">
+                    <h2 class="title__style--2">我的技能</h2>
+
+                    <!-- Start single skill -->
+                    <div class="single__skill">
+                      <p>大学英语</p>
+                      <div class="progress">
+                        <div class="progress-bar pen__coloe--3 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".5s" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                          <span class="pen-lable">90</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End single skill -->
+
+                    <!-- Start single skill -->
+                    <div class="single__skill">
+                      <p>职业素质训练</p>
+                      <div class="progress">
+                        <div class="progress-bar pen__coloe--3 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".5s" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                          <span class="pen-lable">90</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End single skill -->
+
+                    <!-- Start single skill -->
+                    <div class="single__skill">
+                      <p></p>
+                      <div class="progress">
+                        <div class="progress-bar pen__coloe--3 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".5s" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                          <span class="pen-lable"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End single skill -->
+
+                    <!-- Start single skill -->
+                    <div class="single__skill">
+                      <p></p>
+                      <div class="progress">
+                        <div class="progress-bar pen__coloe--3 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".5s" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                          <span class="pen-lable"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End single skill -->
+
+                    <!-- Start single skill -->
+                    <div class="single__skill">
+                      <p></p>
+                      <div class="progress">
+                        <div class="progress-bar pen__coloe--3 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".5s" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                          <span class="pen-lable"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End single skill -->
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="teacher__shedule__list">
+                    <h2 class="title__style--2">应用时间</h2>
+                    <ul class="teacher__shedule__time">
+                      <li>教学/开发 <span>
+                                                              <b>200</b>&nbsp;&nbsp;小时/学时</span></li>
+                      <li>教学/开发 <span>
+                                                              <b>200</b>&nbsp;&nbsp;小时/学时</span></li>
+                      <li>教学/开发 <span>
+                                                              <b></b>&nbsp;&nbsp;小时/学时</span></li>
+                      <li>教学/开发 <span>
+                                                              <b></b>&nbsp;&nbsp;小时/学时</span></li>
+                      <li>教学/开发 <span>
+                                                              <b></b>&nbsp;&nbsp;小时/学时</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile RightSide -->
+      </div>
+    </div>
+  </section>
+{% endblock %}
