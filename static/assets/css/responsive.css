@@ -168,9 +168,11 @@
     .about-img.black-opacity {
         height: 300px !important;
     }
-    .fanfact-area{
+
+        .fanfact-area{
         padding: 100px 0px 80px;
     }
+
     .fanfact-wrap {
         margin-bottom: 25px;
     }

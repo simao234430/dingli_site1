@@ -115,7 +115,7 @@ ul{
 	z-index:-9;
 }
 .bg-img-1{
-	background:url(../images/bg/4.jpg)no-repeat center center / cover;
+	background:url(static/assets/images/bg/4.jpg)no-repeat center center / cover;
 }
 .bg-img-2{
 	background:url(../images/bg/5.jpg)no-repeat center center / cover;
@@ -123,8 +123,12 @@ ul{
 .bg-img-3{
 	background:url(../images/bg/6.jpg)no-repeat center center / cover;
 }
+
+.bg-img-special{
+	background:url(/static/assets/images/sysx.jpg)no-repeat center center / cover;
+}
 .bg-img-4{
-	background:url(../images/bg/rcpy.jpg)no-repeat center center / cover;
+	background:url(/static/assets/images/bg/5.jpg)no-repeat center center / cover;
 }
 .bg-img-5{
 	background:url(../images/bg/8.jpg)no-repeat center center / cover;
@@ -3112,3 +3116,4 @@ h3.blog-title::after{
 	background: #296dc1;
 	margin-top: 100px;
 }
+

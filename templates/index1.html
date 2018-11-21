@@ -1,49 +1,510 @@
 {% extends "base.html" %}
- {% load staticfiles %}
+{% load staticfiles %}
 {% block banner %}
 <section class="slider-area">
-  <div class="slider-active2 slider-next-prev-style">
-    <div class="slider-items">
-      <img src="{% static 'assets/images/slider/slider-1.jpg' %}" alt="" class="slider">
+    <div class="slider-active2 slider-next-prev-style">
+        <div class="slider-items">
+            <img src="{% static 'assets/images/slider/slider-1.jpg' %}" alt="" class="slider">
+        </div>
+        <div class="slider-items">
+            <img src="{% static 'assets/images/slider/slider-2.jpg' %}" alt="" class="slider">
+        </div>
+        <div class="slider-items">
+            <img src="{% static 'assets/images/slider/slider-3.jpg' %}" alt="" class="slider">
+        </div>
     </div>
-    <div class="slider-items">
-      <img src="{% static 'assets/images/slider/slider-2.jpg' %}" alt="" class="slider">
-    </div>
-    <div class="slider-items">
-      <img src="{% static 'assets/images/slider/slider-3.jpg' %}" alt="" class="slider">
-    </div>
-  </div>
 </section>
 {% endblock %}
 {% block content %}
-<section class="blog-area ptb-140 bg-1">
-            <div class="container">
-                <div class="row">
+<section class="blog-area ptb-30 bg-1">
 
-{% for i in  list %}
-                    <div class="col-md-4 col-sm-6 col-xs-12 col">
-                        <div class="blog-wrap  mb-30">
-                            <div class="blog-img">
-                                <img src="assets/images/blog/2.jpg" alt="">
+
+    <div class="container">
+
+        <div class="row ">
+            <div class="text-left">
+                <div class="my-section-title">
+                    <span class="section-serial">01</span>
+                    <div class="title-text">
+                        <h2>热点新闻</h2>
+                        <p>CHARACTERISTIC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            {% for i in list %}
+            <div class="col-md-4 col-sm-6 col-xs-12 col">
+                <div class="blog-wrap  mb-30">
+                    <div class="blog-img">
+                        <img src=" {% static 'assets/images/blog/2.jpg' %}" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
+                                <li><a href="#"><i class="fa fa-comment"></i> 5 Comment</a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i> 5 Love</a></li>
+                            </ul>
+                        </div>
+                        <h3><a href="blog.html">of my entire soul</a></h3>
+                        <p>wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                            spring which I enjoy</p>
+                        <a href="blog.html" class="btn-style">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+<section class="blog-area ptb-30 bg-1">
+
+
+    <div class="container">
+
+        <div class="row ">
+            <div class="text-left">
+                <div class="my-section-title">
+                    <span class="section-serial">02</span>
+                    <div class="title-text">
+                        <h2>我们的优势</h2>
+                        <p>WHY CHOSE US</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kc-elm kc-css-393121 kc_row kc_row_inner">
+            <div class="kc-elm kc-css-140000 kc_col-sm-3 kc_column_inner kc_col-sm-3">
+                <div class="kc_wrapper kc-col-inner-container">
+                    <div class="kc-elm kc-css-210106 ">
+                        <div class="choose-us choose-us-1  ">
+                            <div class="choose-us-image ">
+                                <img src="{% static 'assets/images/choose-1.png' %}" alt="Choose Images">
                             </div>
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
-                                        <li><a href="#"><i class="fa fa-comment"></i> 5 Comment</a></li>
-                                        <li><a href="#"><i class="fa fa-heart"></i> 5 Love</a></li>
-                                    </ul>
-                                </div>
-                                <h3><a href="blog.html">of my entire soul</a></h3>
-                                <p>wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy</p>
-                                <a href="blog.html" class="btn-style">Read More</a>
+                            <div class="choose-us-details">
+                                <h4>研究院</h4>
+                                <p>
+                                    <a href="ys_yjy.aspx">
+                                        教育专家与企业专家，携手教学名师，一同将产业技术标准、用人标准、产业项目经验转换为教育资源，研究符合国内外教育发展趋势的人才培养体系.
+                                    </a></p>
                             </div>
                         </div>
                     </div>
-{% endfor %}
-
                 </div>
             </div>
-        </section>
+            <div class="kc-elm kc-css-633231 kc_col-sm-3 kc_column_inner kc_col-sm-3">
+                <div class="kc_wrapper kc-col-inner-container">
+                    <div class="kc-elm kc-css-427209 ">
+                        <div class="choose-us choose-us-1  ">
+                            <div class="choose-us-image ">
+                                <img src="{% static 'assets/images/choose-2.png' %}" alt="Choose Images">
+                            </div>
+                            <div class="choose-us-details">
+                                <h4>办学理念</h4>
+                                <p>
+                                    <a href="ys_bxll.aspx">
+                                        专业设置以行业需求为导向、专业建设以工程教育认证为标准、课程体系以工程实战环境为载体、人才培养以高素质的应用型人才和具备国际视野的复合型人才为目标...
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kc-elm kc-css-614284 kc_col-sm-3 kc_column_inner kc_col-sm-3">
+                <div class="kc_wrapper kc-col-inner-container">
+                    <div class="kc-elm kc-css-774424 ">
+                        <div class="choose-us choose-us-1  ">
+                            <div class="choose-us-image ">
+                                <img src="{% static 'assets/images/choose-3.png' %}" alt="Choose Images">
+                            </div>
+                            <div class="choose-us-details">
+                                <h4>专业特色</h4>
+                                <p>
+                                    <a href="ys_zyts.aspx">
+                                        依据国家发展战略规划、建立了对标产业、独具特色的专业结构体系、遵循国际工程教育标准，制定了面向职业、强化实践的人才培养体系...
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kc-elm kc-css-291040 kc_col-sm-3 kc_column_inner kc_col-sm-3">
+                <div class="kc_wrapper kc-col-inner-container">
+                    <div class="kc-elm kc-css-832838 ">
+                        <div class="choose-us choose-us-1  ">
+                            <div class="choose-us-image ">
+                                <img src="{% static 'assets/images/choose-4.png' %}" alt="Choose Images">
+                            </div>
+                            <div class="choose-us-details">
+                                <h4>课程特色</h4>
+                                <p>
+                                    <a href="ys_kcts.aspx">
+                                        真实产业项目、接轨前沿、重构知识、“边学习边实践，再学习再实践”迭代循环，实践和问题驱动中实现技能积累、知识碎片化，重组知识体系，体现灵活学习...
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog-area ptb-30 bg-1">
+
+
+    <div class="container">
+
+        <div class="row ">
+            <div class="text-left">
+                <div class="my-section-title">
+                    <span class="section-serial">03</span>
+                    <div class="title-text">
+                        <h2>开设专业</h2>
+                        <p>OUR SPECIALTY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kc-elm kc-css-393121 kc_row kc_row_inner">
+
+    </div>
+</section>
+<section class=" ptb-30 ">
+    <div class="carousel-wrap" style="">
+        <div class="owl-carousel">
+            <div class="owl-item">
+                <a href="/special/1">
+
+                    <div class="department-single department-text">
+                        <img src="{% static 'assets/images/rjjs.png' %}" alt="">
+                        <br>
+                        <h4>移动应用开发专业</h4>
+                        <p>培养互联网+生活、娱乐、金融、教育、医疗、保险、健康等行业移动应用开发的高素质人员.</p>
+                    </div>
+
+                </a>
+            </div>
+            <div class="owl-item">
+                <a href="/special/2">
+
+                    <div class="department-single department-text">
+                        <img src="{% static 'assets/images/rjjs.png' %}" alt="">
+                        <br>
+                        <h4>移动通信技术专业</h4>
+                        <p>本专业主要向移动通信网络测试优化工程师、移动通信网络工程建设工程师、运维管理工程师、通信产品服务销售..</p>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="owl-item">
+                <a href="/special/3">
+
+                    <div class="department-single department-text">
+                        <img src="{% static 'assets/images/rjjs.png' %}" alt="">
+                        <br>
+                        <h4>软件技术专业</h4>
+                        <p>本专业主要面向Web前端开发、后端软件开发、Android手机软件开发、软件UI设计、软件测试、软件运维...</p>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="owl-item">
+                <a href="/special/4">
+
+                    <div class="department-single department-text">
+                        <img src="{% static 'assets/images/rjjs.png' %}" alt="">
+                        <br>
+                        <h4>物联网应用技术专业</h4>
+                        <p>面向基础设施和民生服务等领域的智能制造、智能电力、智能物流、智能交通、智能安防、智能环保、智能医疗...</p>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="owl-item">
+                <a href="/special/5">
+
+                    <div class="department-single department-text">
+                        <img src="{% static 'assets/images/rjjs.png' %}" alt="">
+                        <br>
+                        <h4>电子信息技术专业</h4>
+                        <p>面向生产管理，技术管理，电子设备的运行、操作、管理与维护，智能电子产品二次开发与系统集成，电子产品...</p>
+                    </div>
+
+                </a>
+            </div>
+            <div class="owl-item">
+                <a href="/special/6">
+
+                    <div class="department-single department-text">
+                        <img src="{% static 'assets/images/rjjs.png' %}" alt="">
+                        <br>
+                        <h4>计算机网络技术</h4>
+                        <p>本专业主要向网络综合管理、移动应用开发、Web前端开发、网站管理等岗位，从事计算机网络建设、运行...</p>
+                    </div>
+
+                <!--</a>-->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--<section class=" ptb-30 ">-->
+
+
+<!--<div id="owl-demo" class="owl-carousel owl-theme">-->
+<!--<div class="item"><h1>1</h1></div>-->
+<!--<div class="item"><h1>2</h1></div>-->
+<!--<div class="item"><h1>3</h1></div>-->
+<!--<div class="item"><h1>4</h1></div>-->
+<!--<div class="item"><h1>5</h1></div>-->
+<!--<div class="item"><h1>6</h1></div>-->
+<!--<div class="item"><h1>7</h1></div>-->
+<!--<div class="item"><h1>8</h1></div>-->
+<!--<div class="item"><h1>9</h1></div>-->
+<!--<div class="item"><h1>10</h1></div>-->
+<!--<div class="item"><h1>11</h1></div>-->
+<!--<div class="item"><h1>12</h1></div>-->
+<!--<div class="item"><h1>13</h1></div>-->
+<!--<div class="item"><h1>14</h1></div>-->
+<!--<div class="item"><h1>15</h1></div>-->
+<!--<div class="item"><h1>16</h1></div>-->
+
+<!--</div>-->
+
+
+</section>
+
+
+<section class="fanfact-area parallax black-opacity" data-speed="5" data-bg-image="assets/images/bg/1.jpg"
+         style="background-image: url(&quot;assets/images/bg/1.jpg&quot;); background-position: center center; background-size: cover;">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container kc-col-container">
+                <div class="row kc-elm kc-css-775694 ">
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".1s"
+                         style="visibility: visible; animation-delay: 0.1s;">
+
+
+                        <div class="fanfact-wrap">
+                            <div class="fanfact-wrap"
+                                 style="display:inline-box;float:left;margin-top:10px;margin-right:10px">
+                                <img width="60" height="60" src="{% static 'assets/images/funfact-1.png'%}"
+                                     class="attachment-full size-full" alt="">
+                            </div>
+                            <div>
+                                <h2 class="counter">1500+</h2>
+                                <p>STUDENT</p>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".2s"
+                         style="visibility: visible; animation-delay: 0.2s;">
+                        <div class="fanfact-wrap">
+                            <div class="fanfact-wrap"
+                                 style="display:inline-box;float:left;margin-top:10px;margin-right:10px">
+                                <img width="60" height="60" src="{% static 'assets/images/funfact-2.png'%}"
+                                     class="attachment-full size-full" alt="">
+                            </div>
+                            <h2 class="counter">1200+</h2>
+                            <p>GRADUATES</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".3s"
+                         style="visibility: visible; animation-delay: 0.3s;">
+                        <div class="fanfact-wrap"
+                             style="display:inline-box;float:left;margin-top:10px;margin-right:10px">
+                            <img width="60" height="60" src="{% static 'assets/images/funfact-3.png'%}"
+                                 class="attachment-full size-full" alt="">
+                        </div>
+                        <div class="fanfact-wrap">
+                            <h2 class="counter">30+</h2>
+                            <p>AWARDS</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".4s"
+                         style="visibility: visible; animation-delay: 0.4s;">
+                        <div class="fanfact-wrap"
+                             style="display:inline-box;float:left;margin-top:10px;margin-right:10px">
+                            <img width="60" height="60" src="{% static 'assets/images/funfact-4.png'%}"
+                                 class="attachment-full size-full" alt="">
+                        </div>
+                        <div class="fanfact-wrap">
+                            <h2 class="counter">50+</h2>
+                            <p>RESEARCH</p>
+                        </div>
+                        <div class="funfact-img">
+                            <img width="53" height="53" src="import/images/funfact-1.png"
+                                 class="attachment-full size-full" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--<section class="about-area ptb-140">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-6 col-xs-12 wow fadeInLeft">-->
+<!--<div class="about-img black-opacity">-->
+<!--<img src="assets/images/about.jpg" alt="" />-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-6 col-xs-12 wow fadeInRight">-->
+<!--<div class="about-wrap">-->
+<!--<h2>who we are</h2>-->
+<!--<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.randomised words which don't look even slightly believable.</p>-->
+<!--<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--<ul>-->
+<!--<li>There are many variations of passages</li>-->
+<!--<li>By injected humour or randomised.</li>-->
+<!--<li>the majority have suffered alteration</li>-->
+<!--<li>majority have suffered alteration</li>-->
+<!--<li>variations of passages of Lorem Ipsum</li>-->
+<!--<li>of passages of Lorem Ipsum</li>-->
+<!--<li>many variations of passages.</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+<!--<section class="fanfact-area parallax black-opacity" data-speed="5" data-bg-image="assets/images/bg/1.jpg" style="background-image: url(&quot;assets/images/bg/1.jpg&quot;); background-position: 50% -31.8px; background-size: cover;">-->
+<!--<div class="table">-->
+<!--<div class="table-cell">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;">-->
+<!--<div class="fanfact-wrap">-->
+<!--<h2 class="counter">2157</h2>-->
+<!--<p>Web Design</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;">-->
+<!--<div class="fanfact-wrap">-->
+<!--<h2 class="counter">15444</h2>-->
+<!--<p>Web Development</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">-->
+<!--<div class="fanfact-wrap">-->
+<!--<h2 class="counter">145</h2>-->
+<!--<p>UX/UI Design</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s;">-->
+<!--<div class="fanfact-wrap">-->
+<!--<h2 class="counter">1200</h2>-->
+<!--<p>Photoshop</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+<!--<div class="about-area pb-140">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow fadeInUp" style="visibility: visible;">-->
+<!--<div class="section-title text-center">-->
+<!--<h2>Special features</h2>-->
+<!--<p>the majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col-xs-12">-->
+<!--<div class="featured-wrap">-->
+<!--<ul>-->
+<!--<li class="wow fadeInLeft" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;">-->
+<!--<h3>2013</h3>-->
+<!--<div class="featured-content">-->
+<!--<div class="featured-img" style="background-image: url(&quot;assets/images/featured/1.jpg&quot;); background-size: cover; background-position: center center; height: 169px;">-->
+<!--<img src="assets/images/featured/1.jpg" alt="">-->
+<!--</div>-->
+<!--<div class="featured-info">-->
+<!--<h4>Web Design</h4>-->
+<!--<p>Alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li class="wow fadeInRight" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;">-->
+<!--<h3>2014</h3>-->
+<!--<div class="featured-content">-->
+<!--<div class="featured-img" style="background-image: url(&quot;assets/images/featured/2.jpg&quot;); background-size: cover; background-position: center center; height: 169px;">-->
+<!--<img src="assets/images/featured/2.jpg" alt="">-->
+<!--</div>-->
+<!--<div class="featured-info">-->
+<!--<h4>Web Development</h4>-->
+<!--<p>Alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li class="wow fadeInLeft" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">-->
+<!--<h3>2015</h3>-->
+<!--<div class="featured-content">-->
+<!--<div class="featured-img" style="background-image: url(&quot;assets/images/featured/3.jpg&quot;); background-size: cover; background-position: center center; height: 169px;">-->
+<!--<img src="assets/images/featured/3.jpg" alt="">-->
+<!--</div>-->
+<!--<div class="featured-info">-->
+<!--<h4>PHP </h4>-->
+<!--<p>Alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li class="wow fadeInRight" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s;">-->
+<!--<h3>2016</h3>-->
+<!--<div class="featured-content">-->
+<!--<div class="featured-img" style="background-image: url(&quot;assets/images/featured/4.jpg&quot;); background-size: cover; background-position: center center; height: 169px;">-->
+<!--<img src="assets/images/featured/4.jpg" alt="">-->
+<!--</div>-->
+<!--<div class="featured-info">-->
+<!--<h4>App Development</h4>-->
+<!--<p>Alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li class="wow fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">-->
+<!--<h3>2017</h3>-->
+<!--<div class="featured-content">-->
+<!--<div class="featured-img" style="background-image: url(&quot;assets/images/featured/5.jpg&quot;); background-size: cover; background-position: center center; height: 169px;">-->
+<!--<img src="assets/images/featured/5.jpg" alt="">-->
+<!--</div>-->
+<!--<div class="featured-info">-->
+<!--<h4>UX/UI Design</h4>-->
+<!--<p>Alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<h3>end</h3>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
 {% endblock %}
